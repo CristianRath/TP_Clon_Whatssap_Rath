@@ -1,0 +1,101 @@
+.bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background-color: #fff;
+  align-self: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 8px; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+
+.sender {
+  background-color: #dcf8c6;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  
+}
+
+.sender::after {
+  right: -5px;
+  border-left-color: #dcf8c6;
+  border-right: 0;
+  border-top: 0;
+}
+
+.receiver::after {
+  left: -5px;
+  border-right-color: #fff;
+  border-left: 0;
+  border-top: 0;
+}
+
+.bubble-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  padding-right: 60px;
+  position: relative;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.bubble-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 11px;
+  color: #777;
+  gap: 6px;
+  padding-right: 4px;
+  min-height: 16px;
+}
+
+.message-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.check-svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.first-check {
+  z-index: 2;
+}
+
+.second-check {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  z-index: 1;
+}
+
+

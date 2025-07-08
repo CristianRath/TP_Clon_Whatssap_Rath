@@ -1,0 +1,89 @@
+.settings-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #f0f2f5;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #128c7e;
+  cursor: pointer;
+  margin-right: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.page-header img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.page-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #222;
+  transition: background-color 0.2s ease;
+}
+
+.settings-item:hover {
+  background-color: #dcf8c6;
+}
+
+.settings-item .icon {
+  font-size: 1.2rem;
+  color: #555;
+  min-width: 24px;
+}
+
+.settings-item strong {
+  display: block;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.settings-item small {
+  font-size: 0.85rem;
+  color: #777;
+}

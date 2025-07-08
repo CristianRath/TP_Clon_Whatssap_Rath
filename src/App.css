@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .contact-header h2 {
+    font-size: 1rem;
+  }
+
+  .bubble {
+    max-width: 85%;
+  }
+
+  .message-input input {
+    font-size: 0.9rem;
+  }
+}
+
