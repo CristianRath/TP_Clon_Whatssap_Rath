@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import { contacts } from "../data/contacts";
-import { getBotReply } from "../utils/botResponse";
+import { getBotReply } from "../utils/BotResponse";
 
 export const ChatContext = createContext();
 
